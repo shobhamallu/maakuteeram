@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <test name="Test">
+    <classes>
+      <class name="testscripts.verifylogin"/>
+      <class name="testscripts.opengoogle"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)" parallel="classes">
+    <classes>
+      <class name="testscripts.verifylogin">
+        <methods>
+          <include name="verifyuserlogin"/>
+        </methods>
+      </class> <!-- testscripts.verifylogin -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

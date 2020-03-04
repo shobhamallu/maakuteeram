@@ -1,0 +1,1 @@
+java -cp C:\Users\admin\workspace\maakuteeram\lib\*;C:\Users\admin\workspace\maakuteeram\bin org.testng.TestNG testNG.xml
